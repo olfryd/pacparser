@@ -20,11 +20,9 @@ pacparser is a library to parse proxy auto-config (PAC) files.
 %setup -q
  
 %build
-cd src
 make
  
 %install
-cd src
 make install DESTDIR=$RPM_BUILD_ROOT
 
 %post
