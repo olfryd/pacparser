@@ -104,7 +104,7 @@ docs:
 
 install: all
 	install -d $(LIB_PREFIX) $(INC_PREFIX) $(BIN_PREFIX)
-	install -m 644 $(LIBRARY) $(LIB_PREFIX)/$(LIBRARY)
+	install -m 755 $(LIBRARY) $(LIB_PREFIX)/$(LIBRARY)
 	ln -sf $(LIBRARY) $(LIB_PREFIX)/$(LIBRARY_LINK)
 	install -m 755 pactester $(BIN_PREFIX)/pactester
 	install -m 644 pacparser.h $(INC_PREFIX)/pacparser.h
